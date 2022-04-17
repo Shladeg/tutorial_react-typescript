@@ -1,0 +1,36 @@
+.root {
+  position: sticky;
+  top: 0;
+  min-height: 70px;
+  background-color: darkseagreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .navWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .link {
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+
+    &.active {
+      color: #000;
+    }
+
+    &:hover {
+      color: rgba(#000, 0.7) ;
+    }
+
+  }
+
+  .linkWrap {
+    .link:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+}
